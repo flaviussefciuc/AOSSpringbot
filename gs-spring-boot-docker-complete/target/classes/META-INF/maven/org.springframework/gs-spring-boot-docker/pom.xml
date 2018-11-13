@@ -34,7 +34,7 @@
                 <artifactId>dockerfile-maven-plugin</artifactId>
                 <version>1.3.6</version>
                 <configuration>
-                    <repository>${docker.image.prefix}/${project.artifactId}</repository>
+                    <repository>myimageaos2</repository>
                 </configuration>
             </plugin>
             <!-- end::plugin[] -->
@@ -64,6 +64,7 @@
             </plugin>
             <!-- end::unpack[] -->
         </plugins>
+        <finalName>aos-docker-image</finalName>
     </build>
 
     <dependencies>
